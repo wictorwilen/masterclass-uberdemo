@@ -1,0 +1,11 @@
+{
+  "generator-teams": {
+    "promptValues": {
+      "developer": "Wictor Wilén",
+      "unitTestsEnabled": false,
+      "useAzureAppInsights": true
+    },
+    "libraryName": "masterclassUberdemo",
+    "generator-version": "2.16.0-preview3"
+  }
+}

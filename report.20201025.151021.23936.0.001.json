@@ -1,0 +1,339 @@
+
+{
+  "header": {
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20201025.151021.23936.0.001.json",
+    "dumpEventTime": "2020-10-25T15:10:21Z",
+    "dumpEventTimeStamp": "1603635021098",
+    "processId": 23936,
+    "cwd": "c:\\code\\DEMOS\\teams-masterclass\\masterclass-uberdemo",
+    "commandLine": [
+      "node",
+      "C:\\Users\\WictorWilen\\AppData\\Roaming\\npm\\\\node_modules\\gulp-cli\\bin\\gulp.js",
+      "ngrok-serve",
+      "--debug"
+    ],
+    "nodejsVersion": "v12.4.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.4.0",
+      "v8": "7.4.288.27-node.18",
+      "uv": "1.29.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.38.0",
+      "napi": "4",
+      "llhttp": "1.1.3",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1b",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.4.0/node-v12.4.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.4.0/node-v12.4.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.4.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.19042",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "host": "WWBOOK2"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff7882f64a9",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+9161"
+    },
+    {
+      "pc": "0x00007ff7882f9d94",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+23732"
+    },
+    {
+      "pc": "0x00007ff7882f8db8",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+19672"
+    },
+    {
+      "pc": "0x00007ff7883e256b",
+      "symbol": "uv_loop_fork+48251"
+    },
+    {
+      "pc": "0x00007ff78871a56e",
+      "symbol": "v8::internal::Parser::ReportMessageAt+206"
+    },
+    {
+      "pc": "0x00007ff7886ee5ea",
+      "symbol": "v8::internal::wasm::StreamingDecoder::Fail+666"
+    },
+    {
+      "pc": "0x00007ff788784a3c",
+      "symbol": "v8::internal::Heap::CreateFillerObjectAt+2972"
+    },
+    {
+      "pc": "0x00007ff78878c7af",
+      "symbol": "v8::internal::LocalEmbedderHeapTracer::NotifyV8MarkingWorklistWasEmpty+5375"
+    },
+    {
+      "pc": "0x00007ff788782e23",
+      "symbol": "v8::internal::Heap::CollectGarbage+1235"
+    },
+    {
+      "pc": "0x00007ff788781524",
+      "symbol": "v8::internal::GCTracer::AddScopeSample+1316"
+    },
+    {
+      "pc": "0x00007ff7887c2153",
+      "symbol": "v8::internal::Factory::NewFillerObject+67"
+    },
+    {
+      "pc": "0x00007ff788ae8cc6",
+      "symbol": "v8::internal::OptimizingCompileDispatcher::Unblock+116966"
+    },
+    {
+      "pc": "0x00007ff788f84196",
+      "symbol": "v8::internal::NativesCollection<0>::GetScriptsSource+662454"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2166095872,
+    "totalCommittedMemory": 2166095872,
+    "usedMemory": 2126167040,
+    "availableMemory": 37194768,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 524288,
+        "committedMemory": 524288,
+        "capacity": 523976,
+        "used": 31712,
+        "available": 492264
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 2097152,
+        "capacity": 1047952,
+        "used": 163736,
+        "available": 884216
+      },
+      "old_space": {
+        "memorySize": 2025971712,
+        "committedMemory": 2025971712,
+        "capacity": 1995564032,
+        "used": 1992513120,
+        "available": 3050912
+      },
+      "code_space": {
+        "memorySize": 9076736,
+        "committedMemory": 9076736,
+        "capacity": 7508800,
+        "used": 7508800,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 5246976,
+        "committedMemory": 5246976,
+        "capacity": 3002400,
+        "used": 3002400,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 122556416,
+        "committedMemory": 122556416,
+        "capacity": 122396968,
+        "used": 122396968,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 622592,
+        "committedMemory": 622592,
+        "capacity": 550304,
+        "used": 550304,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047952,
+        "used": 0,
+        "available": 1047952
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 441.843,
+    "kernelCpuSeconds": 32.75,
+    "cpuConsumptionPercent": 24.2634,
+    "maxRss": 2300116992,
+    "pageFaults": {
+      "IORequired": 1396038,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 81113,
+      "writes": 49
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=C:": "c:\\code\\DEMOS\\teams-masterclass\\masterclass-uberdemo",
+    "=ExitCode": "00000000",
+    "aliases": "C:\\Users\\WictorWilen\\OneDrive\\Apps\\cmder\\config\\user_aliases.cmd",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\WictorWilen\\AppData\\Roaming",
+    "APPINSIGHTS_INSTRUMENTATIONKEY": "466b57e1-0d80-4986-8e0c-e3c22cea6aa9",
+    "APPLICATION_ID": "a390a440-16b1-11eb-a20a-938a01ffc5f8",
+    "architecture": "64",
+    "architecture_bits": "64",
+    "ccall": "call C:\\Users\\WictorWilen\\OneDrive\\Apps\\cmder\\vendor\\bin\\cexec.cmd",
+    "cexec": "C:\\Users\\WictorWilen\\OneDrive\\Apps\\cmder\\vendor\\bin\\cexec.cmd",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "132059358278891173",
+    "CMDER_ALIASES": "1",
+    "CMDER_CLINK": "1",
+    "CMDER_CONFIGURED": "1",
+    "CMDER_INIT_END": "11:58:50,60",
+    "CMDER_INIT_START": "11:58:47,77",
+    "CMDER_ROOT": "C:\\Users\\WictorWilen\\OneDrive\\Apps\\cmder",
+    "CMDER_SHELL": "cmd",
+    "CMDER_USER_FLAGS": " ",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "WWBOOK2",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "CONNECTOR_ID": "c1ff1a3b-a6ed-4675-a15b-accf4b088a2b",
+    "DEBUG": "msteams",
+    "debug_output": "0",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "fast_init": "0",
+    "feFlagName": " ",
+    "GIT_INSTALL_ROOT": "C:\\Program Files\\Git",
+    "HOME": "C:\\Users\\WictorWilen",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\WictorWilen",
+    "HOSTNAME": "masterclassteams.ngrok.io",
+    "INIT_CWD": "c:\\code\\DEMOS\\teams-masterclass\\masterclass-uberdemo",
+    "LANG": "en_US.UTF-8",
+    "lib_base": "call \"C:\\Users\\WictorWilen\\OneDrive\\Apps\\cmder\\vendor\\lib\\lib_base.cmd\"",
+    "lib_console": "call \"C:\\Users\\WictorWilen\\OneDrive\\Apps\\cmder\\vendor\\lib\\lib_console.cmd\"",
+    "lib_git": "call \"C:\\Users\\WictorWilen\\OneDrive\\Apps\\cmder\\vendor\\lib\\lib_git.cmd\"",
+    "lib_path": "call \"C:\\Users\\WictorWilen\\OneDrive\\Apps\\cmder\\vendor\\lib\\lib_path.cmd\"",
+    "lib_profile": "call \"C:\\Users\\WictorWilen\\OneDrive\\Apps\\cmder\\vendor\\lib\\lib_profile.cmd\"",
+    "LOCALAPPDATA": "C:\\Users\\WictorWilen\\AppData\\Local",
+    "LOGONSERVER": "\\\\WWBOOK2",
+    "MASTERCLASS2020_APP_ID": "f51175bb-3019-4848-8e5f-3421edbae51c",
+    "MASTERCLASS2020_APP_SECRET": "c_9xU3oLv6E7KzOCDP.dWZRfj6_8_129.B",
+    "MASTERCLASS2020_APP_URI": "api://masterclassteams.ngrok.io/f51175bb-3019-4848-8e5f-3421edbae51c",
+    "max_depth": "1",
+    "MICROSOFT_APP_ID": "252e51aa-e77d-4687-93eb-92211bd155ea",
+    "MICROSOFT_APP_PASSWORD": "~.Swu_GGr.~2z2zru0Hza.H18AxuOQGH4_",
+    "NGROK_AUTH": "1cYD7J3MP0bjbc8M2DrnKAAe4nR_69XA7LGsFbhFv2XbpC44S",
+    "NGROK_REGION": "",
+    "NGROK_SUBDOMAIN": "masterclassteams",
+    "nix_tools": "1",
+    "NUMBER_OF_PROCESSORS": "8",
+    "NVIDIAWHITELISTED": "0x01",
+    "NVM_HOME": "C:\\Users\\WictorWilen\\AppData\\Roaming\\nvm",
+    "NVM_SYMLINK": "C:\\Program Files\\nodejs",
+    "OneDrive": "C:\\Users\\WictorWilen\\OneDrive - Wictors Software Factory",
+    "OneDriveCommercial": "C:\\Users\\WictorWilen\\OneDrive - Wictors Software Factory",
+    "OneDriveConsumer": "C:\\Users\\WictorWilen\\OneDrive",
+    "OS": "Windows_NT",
+    "PACKAGE_NAME": "masterclassuberdemo",
+    "Path": "C:\\Users\\WictorWilen\\OneDrive\\Apps\\cmder\\bin;C:\\Users\\WictorWilen\\OneDrive\\Apps\\cmder\\vendor\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Users\\WictorWilen\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\WictorWilen\\.windows-build-tools\\python27\\;C:\\Ruby26-x64\\bin;C:\\Users\\WictorWilen\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\WictorWilen\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\WictorWilen\\AppData\\Roaming\\npm;C:\\Users\\WictorWilen\\AppData\\Local\\Programs\\Fiddler;C:\\Users\\WictorWilen\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\WictorWilen\\.dotnet\\tools;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\WictorWilen\\OneDrive\\Apps\\cmder",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC;.RB;.RBW",
+    "PLINK_PROTOCOL": "ssh",
+    "PORT": "3007",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 142 Stepping 10, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "8e0a",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "C\bL\bI\bN\bK\b \b$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files\\SharePoint Online Management Shell\\",
+    "PUBLIC": "C:\\Users\\Public",
+    "SECURITY_TOKEN": "",
+    "SHIM_MCCOMPAT": "0x810000001",
+    "SVN_SSH": "C:\\\\Program Files\\\\Git\\\\bin\\\\ssh.exe",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\WICTOR~1\\AppData\\Local\\Temp",
+    "TERM": "cygwin",
+    "time_init": "0",
+    "TMP": "C:\\Users\\WICTOR~1\\AppData\\Local\\Temp",
+    "USERDOMAIN": "AzureAD",
+    "USERDOMAIN_ROAMINGPROFILE": "AzureAD",
+    "USERNAME": "WictorWilen",
+    "USERPROFILE": "C:\\Users\\WictorWilen",
+    "user_aliases": "C:\\Users\\WictorWilen\\OneDrive\\Apps\\cmder\\config\\user_aliases.cmd",
+    "verbose_output": "0",
+    "VERSION": "0.0.1",
+    "windir": "C:\\WINDOWS",
+    "WSLENV": "WT_SESSION::WT_PROFILE_ID",
+    "WT_PROFILE_ID": "{0caa0dad-35be-5f56-a8ff-afceeeaa6102}",
+    "WT_SESSION": "1de01ead-e4ac-4b6d-8b03-229364106501"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\powrprof.dll",
+    "C:\\WINDOWS\\SYSTEM32\\UMPDC.dll",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\SYSTEM32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\bcryptprimitives.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\WINDOWS\\System32\\fwpuclnt.dll",
+    "\\\\?\\c:\\code\\DEMOS\\teams-masterclass\\masterclass-uberdemo\\node_modules\\node-sass\\vendor\\win32-x64-72\\binding.node"
+  ]
+}
